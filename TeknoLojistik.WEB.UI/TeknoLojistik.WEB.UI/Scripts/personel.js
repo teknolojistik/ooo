@@ -1,4 +1,4 @@
-﻿var Arac = {
+﻿var personel = {
 
     Setup: function () {
         this.GridOlustur();
@@ -11,12 +11,12 @@
         var self = this;
 
         $.ajax({
-            url: "/Services/srvArac.asmx/Listele",
+            url: "/Services/srvPersonel.asmx/Listele",
             method: "post",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (o) {
-                console.log("Araç grid oluştur metodu successe girdi.");
+                console.log("Personel grid oluştur metodu successe girdi.");
                 var sonuc = o.d;
                 $("#yukleniyor").hide();
                 var ds = new kendo.data.DataSource({
@@ -31,7 +31,7 @@
         });
 
         function Grid(ds) {
-            console.log("Arac")
+            console.log("Personel")
             $("#grid").kendoGrid({
                 dataSource: ds,
                 height: "100%",
@@ -45,34 +45,45 @@
                 },
                 columns: [
                     {
-                        field: "Plaka",
+                        field: "TCKimlikNo",
                         height: 100,
-                        title: "Plaka"
+                        title: "TCKimlikNo"
                     },
                     {
-                        field: "Plaka2",
+                        field: "Ad",
                         height: 100,
-                        title: "Plaka 2"
+                        title: "Ad"
                     },
                     {
-                        field: "Marka",
+                        field: "Soyad",
                         height: 100,
-                        title: "Marka"
+                        title: "Soyad"
+                    },
+                    
+                    {
+                        field: "TelefonNo",
+                        height: 100,
+                        title: "TelefonNo"
                     },
                     {
-                        field: "Model",
+                        field: "Adres",
                         height: 100,
-                        title: "Model"
+                        title: "Adres"
                     },
                     {
-                        field: "Yil",
+                        field: "DepartmanId",
                         height: 100,
-                        title: "Yıl"
+                        title: "DepartmanId"
                     },
                     {
-                        field: "Kapasite",
+                        field: "KullaniciAd",
                         height: 100,
-                        title: "Kapasite"
+                        title: "KullaniciAd"
+                    },
+                    {
+                        field: "Sifre",
+                        height: 100,
+                        title: "Sifre"
                     },
                     {
                         command: [{
@@ -88,7 +99,7 @@
                     window: {
                         title: "Güncelle",
                         animation: true,
-                        Template: "/View/Arac/Guncelle.html"
+                        Template: "/View/Personel/Guncelle.html"
                     }
                 },
                 remove: function (e) {
@@ -122,17 +133,19 @@
 
             var data = {
                 Id: dataItem.Id,
-                Plaka: $("input[name$='Plaka']").val(),
-                Plaka2: $("input[name$='Plaka2']").val(),
-                Marka: $("input[name$='Marka']").val(),
-                Model: $("input[name$='Model']").val(),
-                Yil: $("input[name$='Yil']").val(),
-                Kapasite: $("input[name$='Kapasite']").val()
+                TCKimlikNo: $("input[name$='TCKimlikNo']").val(),
+                Ad: $("input[name$='Ad']").val(),
+                Soyad: $("input[name$='Soyad']").val(),
+                TelefonNo: $("input[name$='TelefonNo']").val(),
+                Adres: $("input[name$='Adres']").val(),
+                DepartmanId: $("input[name$='DepartmanId']").val(),
+                KullaniciAd: $("input[name$='KullaniciAd']").val(),
+                Sifre: $("input[name$='Sifre']").val(),
             };
 
             $.ajax({
-                url: "/Services/srvArac.asmx/Guncelle",
-                data: JSON.stringify({ a: data }),
+                url: "/Services/srvPersonel.asmx/Guncelle",
+                data: JSON.stringify({ p: data }),
                 method: "post",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -142,15 +155,12 @@
                     $("#yukleniyor").hide();
                     if (sonuc) {
                         self.GridOlustur();
-                        kendo.alert("Araç Guncellendi.");
+                        kendo.alert("Personel Guncellendi.");
                     }
 
                     else
                         kendo.alert("Bir hata oluştu!");
 
-
-                    //var win = $("#window").data("kendoWindow");
-                    //win.close();
 
                 },
                 error: function (o) {
@@ -171,7 +181,7 @@
                 title: "Ekle",
                 height: 350,
                 width: 400,
-                content: "/View/Arac/Ekle.html",
+                content: "/View/Personel/Ekle.html",
                 modal: true,
                 animation: {
                     open: {
@@ -179,7 +189,6 @@
                     }
                 },
                 open: function () {
-                    //Güncelleme işleminde açılışta textboxlar ve diğer şeyler dolacak.
 
                 },
                 zIndex: 99
@@ -192,16 +201,18 @@
 
         function Ekle() {
             var data = {
-                Plaka: $("#txtPlaka").val(),
-                Plaka2: $("#txtPlaka2").val(),
-                Marka: $("#txtMarka").val(),
-                Model: $("#txtModel").val(),
-                Yil: $("#txtYil").val(),
-                Kapasite: $("#txtKapasite").val(),
+                TCKimlikNo: $("#txtTCKimlikNo").val(),
+                Ad: $("#txtAd").val(),
+                Soyad: $("#txtSoyad").val(),
+                TelefonNo: $("#txtTelefonNo").val(),
+                Adres: $("#txtAdres").val(),
+                DepartmanId: $("#txtDepartmanId").val(),
+                KullaniciAd: $("#txtKullaniciAdi").val(),
+                Sifre: $("#txtSifre").val(),
             };
 
             $.ajax({
-                url: "/Services/srvArac.asmx/Ekle",
+                url: "/Services/srvPersonel.asmx/Ekle",
                 data: JSON.stringify({ a: data }),
                 method: "post",
                 contentType: "application/json; charset=utf-8",
@@ -211,7 +222,7 @@
                     var sonuc = o.d;
                     $("#yukleniyor").hide();
                     if (sonuc)
-                        kendo.alert("Araç eklendi.");
+                        kendo.alert("Personel eklendi.");
                     else
                         kendo.alert("Bir hata oluştu!");
 
@@ -232,7 +243,7 @@
         var self = this;
 
         $.ajax({
-            url: "/Services/srvArac.asmx/Sil",
+            url: "/Services/srvPersonel.asmx/Sil",
             data: JSON.stringify({ a: id }),
             method: "post",
             contentType: "application/json; charset=utf-8",
@@ -242,7 +253,7 @@
                 var sonuc = o.d;
                 $("#yukleniyor").hide();
                 if (sonuc > 0)
-                    kendo.alert("Araç Silindi.");
+                    kendo.alert("Personel Silindi.");
                 else
                     kendo.alert("Bir hata oluştu!");
 

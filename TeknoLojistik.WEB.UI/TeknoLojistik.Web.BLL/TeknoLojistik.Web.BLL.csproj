@@ -56,6 +56,7 @@
     <Compile Include="bllCRUD.cs" />
     <Compile Include="bllGenel.cs" />
     <Compile Include="bllGiris.cs" />
+    <Compile Include="bllPersonel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

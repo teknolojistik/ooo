@@ -9,42 +9,40 @@ using TeknoLojistik.Web.DAL.DB;
 namespace TeknoLojistik.WEB.UI.Services
 {
     /// <summary>
-    /// Summary description for srvArac
+    /// Summary description for srvPersonel
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    [System.Web.Script.Services.ScriptService()]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    // [System.Web.Script.Services.ScriptService]
-    public class srvArac : System.Web.Services.WebService
+     [System.Web.Script.Services.ScriptService]
+    public class srvPersonel : System.Web.Services.WebService
     {
 
         [WebMethod]
-        public List<Arac> Listele()
+        public List<Personel> Listele()
         {
-            return bllArac.Listele();
+            return bllPersonel.Listele();
         }
 
         [WebMethod]
-        
-        public bool Ekle(Arac a)
+
+        public bool Ekle(Personel p)
         {
-            return bllArac.Ekle(a);
+            return bllPersonel.Ekle(p);
         }
 
 
         [WebMethod]
-        public int Sil(int a)
+        public int Sil(int p)
         {
-            return bllArac.Sil(a);
+            return bllPersonel.Sil(p);
         }
 
         [WebMethod]
-        public int Guncelle(Arac a)
+        public int Guncelle(Personel p)
         {
-            return bllArac.Guncelle(a);
+            return bllPersonel.Guncelle(p);
         }
-
     }
 }

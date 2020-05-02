@@ -7,22 +7,22 @@ using TeknoLojistik.Web.DAL.DB;
 
 namespace TeknoLojistik.Web.DAL
 {
-    public class dalArac
+   public class dalPersonel
     {
-        public static List<Arac> Listele()
+        public static List<Personel> Listele()
         {
             TeknoLojistikContext ctx = new TeknoLojistikContext();
 
-            List<Arac> lst = ctx.Araclar.ToList();
+            List<Personel> lst = ctx.Personeller.ToList();
 
             return lst;
         }
 
-        public static bool Ekle(Arac a)
+        public static bool Ekle(Personel p)
         {
             TeknoLojistikContext ctx = new TeknoLojistikContext();
 
-            ctx.Araclar.Add(a);
+            ctx.Personeller.Add(p);
             var sonuc = ctx.SaveChanges();
             if (sonuc > 0)
                 return true;
@@ -31,22 +31,23 @@ namespace TeknoLojistik.Web.DAL
         }
 
 
-        public static int Guncelle(Arac a)
+        public static int Guncelle(Personel p)
         {
 
             try
             {
                 TeknoLojistikContext ctx = new TeknoLojistikContext();
 
-                var deger = ctx.Araclar.Where(o => o.Id == a.Id).SingleOrDefault();
+                var deger = ctx.Personeller.Where(o => o.Id == p.Id).SingleOrDefault();
 
 
-                deger.Plaka = a.Plaka;
-                deger.Plaka2 = a.Plaka2;
-                deger.Marka = a.Marka;
-                deger.Model = a.Model;
-                deger.Yil = a.Yil;
-                deger.Kapasite = a.Kapasite;
+                deger.TCKimlikNo = p.TCKimlikNo;
+                deger.Ad = p.Ad;
+                deger.Soyad = p.Soyad;
+                deger.Adres = p.Adres;
+                deger.DepartmanId = p.DepartmanId;
+                deger.KullaniciAd = p.KullaniciAd;
+                deger.Sifre = p.Sifre;
                 return ctx.SaveChanges();
             }
             catch (Exception)
@@ -61,9 +62,10 @@ namespace TeknoLojistik.Web.DAL
         public static int Sil(int id)
         {
             TeknoLojistikContext ctx = new TeknoLojistikContext();
-            var sonuc = ctx.Araclar.Where(o => o.Id == id).FirstOrDefault();
-            ctx.Araclar.Remove(sonuc);
+            var sonuc = ctx.Personeller.Where(o => o.Id == id).FirstOrDefault();
+            ctx.Personeller.Remove(sonuc);
             return ctx.SaveChanges();
         }
     }
 }
+

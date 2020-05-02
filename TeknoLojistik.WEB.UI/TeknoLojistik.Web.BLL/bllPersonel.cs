@@ -8,13 +8,13 @@ using TeknoLojistik.Web.DAL.DB;
 
 namespace TeknoLojistik.Web.BLL
 {
-    public class bllArac
+  public  class bllPersonel
     {
-        public static List<Arac> Listele()
+        public static List<Personel> Listele()
         {
             try
             {
-                return dalArac.Listele();
+                return dalPersonel.Listele();
             }
             catch (Exception)
             {
@@ -22,11 +22,11 @@ namespace TeknoLojistik.Web.BLL
             }
         }
 
-        public static bool Ekle(Arac a)
+        public static bool Ekle(Personel p)
         {
             try
             {
-                return dalArac.Ekle(a);
+                return dalPersonel.Ekle(p);
             }
             catch (Exception)
             {
@@ -34,11 +34,11 @@ namespace TeknoLojistik.Web.BLL
             }
         }
 
-        public static int Sil(int a)
+        public static int Sil(int p)
         {
             try
             {
-                return dalArac.Sil(a);
+                return dalPersonel.Sil(p);
             }
             catch (Exception)
             {
@@ -47,11 +47,11 @@ namespace TeknoLojistik.Web.BLL
         }
 
 
-        public static int Guncelle(Arac a)
+        public static int Guncelle(Personel p)
         {
             try
             {
-                return dalArac.Guncelle(a);
+                return dalPersonel.Guncelle(p);
             }
             catch (Exception)
             {

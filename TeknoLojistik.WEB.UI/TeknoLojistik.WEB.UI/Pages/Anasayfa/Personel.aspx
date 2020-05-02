@@ -7,7 +7,7 @@
         <div class="list-group list-group-flush">
             <a href="../Personel/Araclar.aspx" class="list-group-item list-group-item-action bg-light">Araçlar</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Firmalar</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Şoförler</a>
+            <a href="../Personel/Personeller.aspx" class="list-group-item list-group-item-action bg-light">Şoförler</a>
         </div>
     </div>
 </asp:Content>
