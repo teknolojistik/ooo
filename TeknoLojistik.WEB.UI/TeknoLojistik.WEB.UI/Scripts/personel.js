@@ -213,7 +213,7 @@
 
             $.ajax({
                 url: "/Services/srvPersonel.asmx/Ekle",
-                data: JSON.stringify({ a: data }),
+                data: JSON.stringify({ p: data }),
                 method: "post",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -244,7 +244,7 @@
 
         $.ajax({
             url: "/Services/srvPersonel.asmx/Sil",
-            data: JSON.stringify({ a: id }),
+            data: JSON.stringify({ p: id }),
             method: "post",
             contentType: "application/json; charset=utf-8",
             dataType: "json",

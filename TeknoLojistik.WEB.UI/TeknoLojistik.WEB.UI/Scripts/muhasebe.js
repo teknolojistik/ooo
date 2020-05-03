@@ -1,8 +1,9 @@
 ﻿var Muhasebe = {
 
     Setup: function () {
-        this.ilListele();
+        //this.ilListele();
         kendo.ui.progress($("#loading"), true);
+        this.tabStrip();
     },
 
     ilListele: function () {
@@ -111,6 +112,47 @@
             }
         })
 
+    },
+
+    tabStrip: function () {
+        $("#tabstrip").kendoTabStrip();
+
+        var tabstrip = $("#tabstrip").data("kendoTabStrip");
+
+        tabstrip.tabGroup.on("click", "[data-type='remove']", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var item = $(e.target).closest(".k-item");
+            tabstrip.remove(item.index());
+        });
+
+        var tabCounter = tabstrip.items().length;
+
+        var template = "<label>Ad: </label><input type='text'/>"
+
+        $("#appendButton").click(function () {
+            tabstrip.append({
+                text: 'İçerik ' + (++tabCounter) + ' <button data-type="remove" class="k-button k-button-icon"><span class="k-icon k-i-close"></span></button>',
+                encoded: false,
+                contentUrls: [null, "/view/arac/ekle.html"]
+            });
+        });
+
+        
+
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([40.946045, 39.901309]),
+                zoom: 5
+            })
+        });
     }
 
 }
