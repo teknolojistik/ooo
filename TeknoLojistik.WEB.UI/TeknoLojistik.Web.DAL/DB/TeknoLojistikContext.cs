@@ -13,7 +13,7 @@ namespace TeknoLojistik.Web.DAL.DB
         {
 
         }
-
+        public virtual DbSet<Departman> Departmanlar { get; set; }
         public virtual DbSet<Personel> Personeller { get; set; }
         public virtual DbSet<Arac> Araclar { get; set; }
         public virtual DbSet<Firma> Firmalar { get; set; }

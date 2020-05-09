@@ -57,6 +57,7 @@
     <Compile Include="dalGiris.cs" />
     <Compile Include="dalPersonel.cs" />
     <Compile Include="DB\Arac.cs" />
+    <Compile Include="DB\Departman.cs" />
     <Compile Include="DB\Firma.cs" />
     <Compile Include="DB\Ilce.cs" />
     <Compile Include="DB\Kullanici.cs" />

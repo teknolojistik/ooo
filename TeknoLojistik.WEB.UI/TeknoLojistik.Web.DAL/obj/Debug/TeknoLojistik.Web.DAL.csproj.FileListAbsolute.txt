@@ -85,3 +85,22 @@ D:\Ossy Files\GitHub\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\Te
 D:\Ossy Files\GitHub\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.csproj.CopyComplete
 D:\Ossy Files\GitHub\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.dll
 D:\Ossy Files\GitHub\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.pdb
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\TeknoLojistik.Web.DAL.dll.config
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\TeknoLojistik.Web.DAL.dll
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\TeknoLojistik.Web.DAL.pdb
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\EntityFramework.dll
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\EntityFramework.xml
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.csprojAssemblyReference.cache
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.IlkMigration.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.SehirIlceTablo.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.KullanicilarTablosu.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.AracPlakaUzunluk.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.SehirlerAdDuzenleme.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.Migrations.IlceAdDuzenleme.resources
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.csproj.GenerateResource.cache
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.csproj.CoreCompileInputs.cache
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.csproj.CopyComplete
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.dll
+C:\Users\eda\Desktop\Tutanamayanlar\Proje\ooo\TeknoLojistik.WEB.UI\TeknoLojistik.Web.DAL\obj\Debug\TeknoLojistik.Web.DAL.pdb
